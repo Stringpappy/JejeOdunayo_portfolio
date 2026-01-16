@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeje Odunayo Oluwaseyi | Python Developer</title>
+
+<style>
+:root {
+    --bg: #f4f6f8;
+    --text: #222;
+    --card: #ffffff;
+    --primary: #2563eb;
+}
+
+.dark {
+    --bg: #0f172a;
+    --text: #e5e7eb;
+    --card: #1e293b;
+    --primary: #38bdf8;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
+
+.card {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    margin: 0;
+}
+
+.subtitle {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.links a {
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    opacity: 0.7;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header class="card">
+    <div>
+        <h1>Jeje Odunayo Oluwaseyi</h1>
+        <p class="subtitle">Python Developer (Internship / Junior Role)</p>
+    </div>
+    <div>
+        <button onclick="toggleDark()">🌙 Dark Mode</button>
+        <button onclick="downloadPDF()">⬇ Download PDF</button>
+    </div>
+</header>
+
+<div class="card">
+<h2>Professional Summary</h2>
+<p>
+Motivated Python Developer with hands-on experience using
+<strong>Django, FastAPI, and MySQL</strong>. Skilled in building
+secure RESTful APIs, authentication systems, and backend logic.
+Actively seeking internship or junior developer opportunities.
+</p>
+</div>
+
+<div class="card">
+<h2>Technical Skills</h2>
+<div class="skills">
+<div>
+<h3>Languages</h3>
+<ul>
+<li>Python</li>
+<li>SQL</li>
+<li>HTML & CSS</li>
+<li>JavaScript (Basic)</li>
+</ul>
+</div>
+
+<div>
+<h3>Frameworks</h3>
+<ul>
+<li>Django</li>
+<li>Django REST Framework</li>
+<li>FastAPI</li>
+</ul>
+</div>
+
+<div>
+<h3>Databases</h3>
+<ul>
+<li>MySQL</li>
+<li>SQLite</li>
+</ul>
+</div>
+
+<div>
+<h3>Tools</h3>
+<ul>
+<li>Git & GitHub</li>
+<li>Postman</li>
+<li>Linux CLI</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="card">
+<h2>Projects</h2>
+
+<h3>Django Backend API</h3>
+<ul>
+<li>REST API with authentication and authorization</li>
+<li>MySQL database integration</li>
+<li>JWT-based login system</li>
+</ul>
+
+<h3>FastAPI Service</h3>
+<ul>
+<li>High-performance APIs</li>
+<li>Pydantic validation</li>
+<li>Tested with Postman</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Experience</h2>
+<p><strong>Python Developer (Self Projects)</strong></p>
+<ul>
+<li>Built backend systems using Django & FastAPI</li>
+<li>Optimized database queries</li>
+<li>Used GitHub for version control</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Links</h2>
+<div class="links">
+<a href="https://github.com/your-username" target="_blank">GitHub</a>
+<a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+</div>
+<p>⚠ Replace links with your real profiles</p>
+</div>
+
+<footer>
+© 2026 Jeje Odunayo Oluwaseyi
+</footer>
+
+</div>
+
+<script>
+function toggleDark() {
+    document.body.classList.toggle('dark');
+}
+
+function downloadPDF() {
+    window.print();
+}
+</script>
+
+</body>
+</html>
